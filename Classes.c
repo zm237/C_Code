@@ -10,10 +10,16 @@ int main(){
 	printf("Hi there");
 	}
 
+	int g_length;
+	scanf("%d", &g_length);
+
+	int g_width;
+	scanf("%d", &g_width);
+	
 	bool graph[10][10];
 
-	for (int i = 0; i < sizeof(graph)/sizeof(graph[i]); i++){
-		for (int j = 0; j < sizeof(graph[i])/sizeof(graph[i][j]); j++){
+	for (int i = 0; i < g_length; i++){
+		for (int j = 0; j < g_width; j++){
 			printf(graph[i][j] + " ");
 		}
 		printf("\n");
